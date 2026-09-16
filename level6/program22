@@ -1,0 +1,7 @@
+str="rajesh"
+count =0
+for vowel in "aeiou":
+    for cha in str:
+        if cha==vowel:
+           count =count+1
+    print(vowel,":" ,count)    

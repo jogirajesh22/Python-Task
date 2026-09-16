@@ -1,0 +1,6 @@
+str="rajesh"
+output=""
+for cha in range(len(str)):
+    if cha %2==0:
+        output=output+str[cha]
+print(output)

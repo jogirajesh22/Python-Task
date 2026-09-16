@@ -1,0 +1,6 @@
+names=["rajesh","parasd","malli","stop"]
+for name in names:
+    if name == "stop":
+        break
+    print(name)
+

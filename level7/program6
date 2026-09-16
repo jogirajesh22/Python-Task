@@ -1,0 +1,10 @@
+t=open("sample.txt",'r')
+data=t.read()
+count=0
+
+for ch in data:
+
+ if ch in "aeiouAEIOU":
+    count=count+1
+print("total of vowel:",count)    
+t.close()

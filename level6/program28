@@ -1,0 +1,6 @@
+str="mangomo" 
+unique= ""
+for char in str:
+    if char not in unique:
+       unique+=char
+print(unique) 

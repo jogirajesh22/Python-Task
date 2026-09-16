@@ -1,0 +1,5 @@
+#Write a program count each occurrence of a vowel from the given string
+str = "education"
+for char in "aeiouAEIOU":
+    count =str.count(char)
+    print(char ,":", count)

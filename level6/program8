@@ -1,0 +1,5 @@
+#.Count the number of words in the input string.
+str=input(" enter a input :")
+words =str.split()
+count =len(words)
+print(count)

@@ -1,0 +1,9 @@
+
+t=open("sample.txt",'a')
+t.write("Welcome to Python programming\n")
+t.close()
+
+t=open("sample.txt",'r')
+content=t.read()
+print(content)
+t.close()

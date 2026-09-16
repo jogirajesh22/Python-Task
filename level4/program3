@@ -1,0 +1,6 @@
+X = [10, 25, 28, 10, 78, 26, 25, 35, 28] 
+duplicate=[]
+for num in X:
+    if X.count(num)>1 and num not in duplicate:
+        duplicate.append(num) 
+print(duplicate)    

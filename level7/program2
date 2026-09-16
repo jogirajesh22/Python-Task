@@ -1,0 +1,17 @@
+lines=["Today mam told me",
+        "Today will you conducted session",
+        "python program",
+        "And java program",
+         "Thank you"]
+t=open("welcome.txt",'w')
+for line in lines:
+    t.write(line+"\n")  
+t.close()
+
+t=open("welcome.txt",'r')
+
+for line in t:
+    print(line.strip())
+    
+t.close()
+       

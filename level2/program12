@@ -1,0 +1,5 @@
+#Write a program to traverse the string “python program”and         print each character on a new line.
+
+text="python program"
+for i in text:
+   print(i)

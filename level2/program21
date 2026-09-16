@@ -1,0 +1,29 @@
+#Extract the words that start with consonants.
+#Take the first letter of each consonant-starting word.
+#Join these letters to form a meaningful/positive word.
+#Example
+words = ["apple", "Dream", "orange", "Success", "umbrella",
+         "Love", "elephant", "Energy", "ice", "Kind"]
+
+result=" "
+for word in words:
+    if word[0] not  in "aeiouAEIOU":
+        print(word)
+        result=result+word[0]
+print(result)        
+
+#Take the first letter of each consonant-starting word.
+result = []
+for word in words:
+    if word[0] not in "aeiouAEIOU":
+       
+       result.append(word[0])
+print(result) 
+
+#Join these letters to form a meaningful/positive word.
+result=" "
+for word in words:
+    if word[0] not in "aeiouAEIOU":
+        result=result+word[0]
+    rr =" ".join(result)    
+print(rr)

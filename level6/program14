@@ -1,0 +1,4 @@
+#.Replace all spaces in the input string with '-'.
+str ="I am rajesh"
+str=str.replace(" ","_")
+print(str)
