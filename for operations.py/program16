@@ -1,0 +1,44 @@
+#Use a loop to repeatedly ask the user for an option and perform the selected operation.
+def add(a,b):
+    return (a+b)
+
+def sub(a,b):
+    return (a-b)
+
+
+def mult(a,b):
+    return (a*b)
+
+def div(a,b):
+    return (a/b)
+while True:
+
+  print("1. add")
+  print("2. sub")
+  print("3. mult")
+  print("4. div")
+  print("5. exit")
+
+  option =int(input("enter you option:"))
+
+  if option ==5:
+    print("program ended.")
+    break
+
+  a=int(input("entre a value a:"))
+  b=int(input("entre a value b:"))
+  if option ==1:
+   print("result",add(a,b))
+  elif option ==2:
+    print("result",sub(a,b))
+
+  elif option ==3:
+    print("result",mult(a,b))
+
+  elif option ==4:
+    print("result",div(a,b))
+
+
+  else:
+     print(" ")
+

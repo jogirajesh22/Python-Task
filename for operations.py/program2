@@ -1,0 +1,4 @@
+def add(a,b):
+    c=a+b
+    return(f"sum of a={a} b={b} of {c}")
+print(add(10,20))

@@ -1,0 +1,9 @@
+# Create a function check_number(n) that checks whether a number is positive, negative, or zero.
+def check_number(n):
+    if n>0:
+       print("positive")
+    elif n<0:
+        print("negative")
+    elif n==0:
+        print("zero")
+check_number(3)                
