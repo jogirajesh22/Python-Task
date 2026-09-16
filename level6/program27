@@ -1,0 +1,18 @@
+x="madam"
+if x ==x[::-1]:
+    print("palindrome")
+else:
+    print("not palindrome")    
+
+
+
+
+    reverse = ""
+
+for i in range(len(x) - 1, -1, -1):
+    reverse = reverse + x[i]
+
+if x == reverse:
+    print("Palindrome")
+else:
+    print("Not Palindrome")

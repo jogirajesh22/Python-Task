@@ -1,0 +1,6 @@
+str="rajesh ram"
+count = 0
+for i in range(len(str)):
+    if str[i] == " ":
+        count = count + 1
+print(count+1)        

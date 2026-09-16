@@ -1,0 +1,8 @@
+#write a Python program to find   the longest word.  words = ["apple", "banana", "cherry", "strawberry", "grape"]
+
+words =["apple","banana","cherry","strawberry","grap"]
+longest = words[0]
+for i in words:
+  if len(i) > len(longest):
+    longest = i
+print(longest)

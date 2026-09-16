@@ -1,0 +1,8 @@
+i="mother"
+if len(i)%2==0 and len(i)>=6:
+    first= i[0:len(i)//2]
+    last= i[len(i)//2:]
+    output=first[len(first)-1]+last[0]
+    print(output)
+else:
+    print("invalid input string")

@@ -1,0 +1,7 @@
+#Write a program that takes string input from the user and filters out all the consonants from the strings and print all respective ascii values in a list format.
+str1=input("enter the string:")
+ascii_value = []
+for char in str1:
+    if char not in "aeiouAWIOU":
+        ascii_value.append(ord(char))
+print(ascii_value)

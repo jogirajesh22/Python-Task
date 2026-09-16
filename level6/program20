@@ -1,0 +1,6 @@
+x="length"
+y="mother"
+if len(x)==len(y) :
+    print(True)
+else:
+    print(False)   

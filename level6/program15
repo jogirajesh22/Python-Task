@@ -1,0 +1,5 @@
+#Given a string, print all characters except the first and last character.
+
+
+str=("rajesh")
+print(str[1:-1])

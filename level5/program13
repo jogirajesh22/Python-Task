@@ -1,0 +1,4 @@
+for i in range(50,0,-1):
+      if i%13 ==0:
+            break
+      print(i)

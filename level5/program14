@@ -1,0 +1,6 @@
+vowel= "AEIOU"
+for i in range(ord('A'),ord('Z')+1):
+    letter =chr(i)
+    if letter in vowel:
+            continue
+    print(letter)

@@ -1,0 +1,9 @@
+#Take two input strings of the same length and check if all the characters from string1 are available in string2 or not if yes print True otherwise print False. 
+
+
+str1= input("enter the string1:")
+str2 =input("enter the string2:")
+if len(str1) ==len(str2):
+   print("True " )
+else:
+   print("Flase")   

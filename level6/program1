@@ -1,0 +1,7 @@
+#Your program should take input as a string and display the total number vowels from the given string.  Assume the input contains the lower case letters
+str=input("enter the string:")
+count = 0
+for char in str:
+    if char in "aeiou":
+       count+=1
+print("total number of vowel:",count)       

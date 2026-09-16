@@ -1,0 +1,6 @@
+num=list(range(1,101))
+sum =0
+for i in range(len(num)):
+    if i %3 ==0:
+        sum=sum+num[i]
+print(sum)        

@@ -1,0 +1,19 @@
+print("add,sub,multiply,divide")
+choice=int(input("enter a value"))
+if choice ==1:
+    a=int(input("a:"))
+    b=int(input("b:"))
+    print("sum:",a+b)
+elif choice == 2:
+    a=int(input("a:"))
+    b=int(input("b:"))    
+    print("sub:",a+b)
+elif choice ==3:
+    a=int(input("a:")) 
+    b=int(input("b:"))
+    print("div:",a/b)
+elif choice ==4:
+    a=int(input("a:"))
+    b=int(input("b:"))  
+    print("mul:",a*b)  
+

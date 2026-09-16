@@ -1,0 +1,6 @@
+sen="the raja is great"
+words=sen.split()
+for word in words:
+    if len(word)>5:
+        continue
+    print(word)
