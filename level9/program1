@@ -1,0 +1,10 @@
+def read_file(filepath):
+   f=open(path,'r')
+   text=f.read()
+   f.close()
+   return text
+
+
+
+path="https://www.python.org/doc/versions/"
+print(read_file(path))

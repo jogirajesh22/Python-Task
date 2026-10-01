@@ -1,0 +1,5 @@
+#colors = ("Red", "Green","Blue""Yellow",”white”),write a   program to traverse and print each color.
+
+colors =("Red","Green","Blue","Yellow","White")
+for char in colors:
+    print(char)

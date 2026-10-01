@@ -1,0 +1,34 @@
+"""
+Multilevel Inheritance – Student
+ Create three classes:
+Person → Student → Exam
+Person: name, age
+Student: course, roll_no
+Exam: marks
+Display all student details using the final Exam object.
+"""
+class Person:
+    def person(self,name,age):
+        self.name=name
+        self.age=age
+        print("name:", self.name)
+        print("Age:",self.age)
+class Student(Person):
+    def student(self,course,roll_no):
+        self.course=course
+        self.roll_no=roll_no
+        print("course:",self.course)  
+        print("roll_no:",self.roll_no)
+class Exam(Student):
+    def exam(self,marks):
+        self.marks=marks
+        print("marks:",self.marks)
+E=Exam()
+E.person("Rajesh",23)
+E.student("Pyrhon",18) 
+E.exam(75)
+
+
+
+
+    

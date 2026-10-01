@@ -1,0 +1,27 @@
+"""
+ Create a Person class with:
+name
+age
+show_person() method
+Create an Employee class that inherits from Person and adds:
+salary
+show_employee() method
+Create an object and display all details.
+"""
+class Person:
+    def person(self,name,age):
+        self.name=name
+        self.age=age
+    def show_person(self):
+        print("Name:",self.name)  
+        print("Age:",self.age)
+class Employee(Person):
+    def Salary(self,salary):
+        self.salary=salary 
+    def show_employee(self):  
+        print("salary:",self.salary)   
+E=Employee()
+E.person("Rajesh",23)
+E.Salary(25000)
+E.show_employee()   
+E.show_person()              

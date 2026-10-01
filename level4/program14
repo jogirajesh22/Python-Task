@@ -1,0 +1,6 @@
+X = [12, 14, 15, 13, 17, 18, 19, 29, 98, 76, 65]
+output =[]
+for i in X:
+    if i %2!=0:
+        output.append(i)
+print(output)        

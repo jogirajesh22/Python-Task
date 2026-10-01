@@ -1,0 +1,61 @@
+
+"""
+Task 2: Employee Salary System 👨‍💼
+Create an employee salary system for a company.
+Classes:
+Employee
+Developer
+Tester
+Manager
+Create a common method:
+calculate_salary()
+Each child class should calculate salary differently.
+For example:
+Developer → Basic Salary + Technical Allowance
+Tester → Basic Salary + Testing Allowance
+Manager → Basic Salary + Manager Allowance
+Create:
+employees = [
+    Developer(...),
+    Tester(...),
+    Manager(...)
+]
+Use:
+for employee in employees:
+    employee.calculate_salary()
+"""
+class Employee:
+    def calculate_salary(self,Basic_salary):
+        self.Basic_salary=Basic_salary
+        print("salary:",self.Basic_salary)
+
+class Developer(Employee):
+    def calculate_salary(self, Basic_salary,Technical_aliowance):
+        self.Basic_salary=Basic_salary
+        self.Technical_allowance=Technical_aliowance
+        print("Developer:",self.Basic_salary+self.Technical_allowance)
+
+class Tester(Employee):  
+    def calculate_salary(self,Basic_salary,Testing_allowance):
+        self.Basic_salary=Basic_salary
+        self.Testing_allowance=Testing_allowance
+        print("Tester:", self.Basic_salary+self.Testing_allowance)  
+class Manager(Employee):
+    def calculate_salary(self,Basic_salary,manager_allowance):
+        self.Basic_salary=Basic_salary
+        self.manager_salary=manager_allowance
+        print("manager:",self.Basic_salary+self.manager_salary)
+   
+employees=[Developer(),
+    Tester(),
+   Manager()]
+
+for employee in employees:
+    employee.calculate_salary(3000,2000)
+    
+
+def generate_salary(employee):
+    employee.calculate_salary(3000,2000)    
+
+
+generate_salary(employees[0])    

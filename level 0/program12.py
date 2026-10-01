@@ -1,0 +1,1 @@
+#WAP to check whether an alphabet is a vowel or consonant.

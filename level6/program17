@@ -1,0 +1,6 @@
+str=input("enter a string:")
+output=""
+for cha in str:
+    if cha >= 'a' and cha <= 'z':
+        output=output+cha
+print(output)

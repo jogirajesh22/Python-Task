@@ -1,0 +1,13 @@
+#.Input a string and check whether it contains at least one vowel, one consonant, and one digit.
+str=input("enter a string:")
+for char in str:
+    if char in "aeiouAEIOU":
+         vowel = True
+    elif char.isalpha():
+         consonants = True
+    elif char.isdigit():
+         digit=True
+if  vowel and consonants and digit:
+     print("True")            
+else:
+     print("flase")     

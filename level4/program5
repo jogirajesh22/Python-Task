@@ -1,0 +1,5 @@
+X = ["PYTHON", "JAVA", "CPP", "GO"]
+result =""
+for word in X:
+     result = result+word[0]
+print(result)     

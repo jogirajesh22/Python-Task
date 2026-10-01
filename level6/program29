@@ -1,0 +1,6 @@
+x="raj esh"
+output =""
+for ch in x:
+ if ch == " ":
+    output =output+"_"
+print(x)

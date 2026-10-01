@@ -1,0 +1,6 @@
+x="Rajesh"
+result=""
+for cha in x:
+    if cha not in "aeiouAEIOU":
+      result =result+str(ord(cha))+" "
+print(result)

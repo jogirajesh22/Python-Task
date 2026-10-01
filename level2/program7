@@ -1,0 +1,9 @@
+#WAP Reverse a given string using a for loop. 
+      #Example: Input: "Python",
+             #  Output: "nohtyP".
+
+text=("Python")
+reversed_text=" "
+for i in text:
+    reversed_text=i+reversed_text
+print(reversed_text)

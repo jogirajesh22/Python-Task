@@ -1,0 +1,19 @@
+def read_flie(fliepath):
+    f=open(path,'r')
+    text=f.read()
+    f.close()
+    return text
+
+def count_flie(num):
+    count=0
+    word=data.split()
+    for i in word:
+        count=count+1
+    return count
+    
+path="C:\\sample\\sample.txt" 
+data=read_flie(path)
+print(data)
+
+print(count_flie(data))
+

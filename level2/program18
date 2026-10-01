@@ -1,0 +1,7 @@
+#WAP Find the smallest number in a list using a for loop
+num = [12,33,44,56]
+smallest = num[0]
+for i in num:
+    if i < smallest:
+        smallest =i
+print(smallest)

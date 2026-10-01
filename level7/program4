@@ -1,0 +1,11 @@
+name=input("enter a name:")
+age=input("enter a age:")
+t=open("sample.txt",'w')
+t.write(f"name:{name}\n")
+t.write(f"age:{age}\n")
+t.close()
+
+t=open("sample.txt",'r')
+content=t.read()
+print(content)
+t.close()

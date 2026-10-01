@@ -1,0 +1,9 @@
+
+f=open("sample.txt",'w')
+data=f.write("Hello,python!")
+f.close()
+
+f=open("sample.txt",'r')
+data=f.read()
+f.close()
+print(data)

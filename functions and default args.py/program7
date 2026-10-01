@@ -1,0 +1,13 @@
+def calculate_bill(item,price,quantity=1,discount=0):
+   total_price=price*quantity
+   discount_amount=total_price*discount/100
+   fill_bill =total_price-discount_amount
+
+   return fill_bill
+result=calculate_bill("laptop",50000)
+
+print(result)
+result1=calculate_bill("mouse",1000,2)
+print(result1)
+result2=calculate_bill("Keyboard",2000,3,10)
+print(result2)

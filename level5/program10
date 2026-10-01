@@ -1,0 +1,8 @@
+
+#int the multiplication table of 3 from 1 to 10, but stop if the result exceeds 15.
+
+for i in range(1,11):
+     result=3*i
+     if result >15:
+          break
+     print("3x",i,"=",result)

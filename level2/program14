@@ -1,0 +1,6 @@
+#Write a  program to print elements of a list 
+   #numbers = [10, 20, 30, 40, 50] in reverse order.
+
+numbers=[10,20,30,40,50]
+numbers.reverse()
+print(numbers)

@@ -1,0 +1,50 @@
+"""
+Task 1: Payment Processing System 💳
+Create a payment system for an online shopping application.
+Classes:
+Payment
+CreditCard
+UPI
+PayPal
+Requirements:
+Create a common pay(amount) method.
+Override pay() in every child class.
+Store all payment objects in a list.
+Use one loop to process all payments.
+Add a refund(amount) method with different behavior for each payment type.
+"""
+class Payment:
+    def pay(self,amount):
+        self.amount=amount
+        print("Enter Amount:",self.amount)     
+    def refund(self,amount):
+        self.amount=amount
+        print("refund amount:",self.amount)
+class CreditCard(Payment):
+    def pay(self,amount):
+        self.amount=amount
+        print("Creditcard:",self.amount)     
+    def refund(self,amount):
+        self.amount=amount
+        print("refund amount:",self.amount)
+class UPI(Payment):
+    def pay(self,amount):
+        self.amount=amount
+        print("UPI payment :",self.amount)     
+    def refund(self,amount):
+        self.amount=amount
+        print("refund amount:",self.amount)            
+class Paypal(Payment):
+    def pay(self,amount):
+        self.amount=amount
+        print("Palpal amount:",self.amount)     
+    def refund(self,amount):
+        self.amount=amount
+        print("refund amount:",self.amount)   
+
+amount=5000
+
+Payment=[Payment(),CreditCard(),UPI(),Paypal()]
+
+for payments in Payment:
+    payments.pay(amount)

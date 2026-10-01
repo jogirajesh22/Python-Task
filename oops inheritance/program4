@@ -1,0 +1,38 @@
+"""
+Hierarchical Inheritance – Company
+ Create a parent class Employee with:
+name
+employee_id
+show_employee()
+Create two child classes:
+Developer → programming_language
+Tester → testing_tool
+Create objects for both and display their complete details.
+"""
+class Employee:
+    def employee(self,name,employee_id):
+        self.name=name
+        self.employee_id=employee_id
+    def show_employee(self):  
+        print("name:",self.name)
+        print("employee id:",self.employee_id)
+class Developer(Employee):
+    def developer(self,programming_language):
+         self.programming_language=programming_language
+         print("programming language:",self.programming_language)  
+class Tester(Employee):
+    def tester(self,testing_tool):
+        self.testing_tool=testing_tool
+
+        print("testing tool:",self.testing_tool)
+d=Developer()
+
+d.developer("python")
+d.employee("Rajesh",218)
+d.show_employee()
+
+
+t=Tester()
+t.tester("selenium")
+t.employee("Raju",16)
+t.show_employee()

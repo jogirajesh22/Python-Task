@@ -1,0 +1,10 @@
+ #Create a function max_of_three(a, b, c) that returns the largest of three numbers.
+def max_of_three(a,b,c):
+    if a > b and a>c:
+          return a
+    elif b>a and b>c:
+         return b
+    else :
+         return c
+result =max_of_three(12,34,45)
+print(result)     

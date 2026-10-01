@@ -1,0 +1,16 @@
+def anlyze_list(numbers):
+  largest =numbers[0]
+  smallest =numbers[0]
+  total =0
+  for num in numbers:
+    if num > largest:
+       largest =num
+    if num<smallest:
+      smallest=num
+    total = total+num
+  average=total/len(numbers)     
+
+  return largest,smallest,total,average
+result=anlyze_list([10,20,30,40,50])
+print(result)  
+

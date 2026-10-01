@@ -1,0 +1,9 @@
+#The given string contains both lowercase and uppercase letters in random order and combines all lowercase letters and displays in output.
+#Example:  #input : AmaZOn
+	    #output: man
+input= "AmaZOn"
+output=" "
+for char  in input:
+    if char.islower():
+       output=output+char
+print(output)

@@ -1,0 +1,4 @@
+#Take a string and display characters at even indexes only
+str=input("enter a string:")
+for i in range(0, len(str),2):
+  print(str[i],end=" ")

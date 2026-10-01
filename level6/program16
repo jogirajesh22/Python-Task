@@ -1,0 +1,7 @@
+str=input("enter a string:")
+count =0
+for cha in str:
+    if cha in "aeiou":
+        count+=1
+
+print(count)    

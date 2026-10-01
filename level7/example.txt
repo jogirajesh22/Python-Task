@@ -1,0 +1,5 @@
+Python version 3.10 detected
+ Loading modules
+Python interpreter ready
+Running task A
+ Task completed

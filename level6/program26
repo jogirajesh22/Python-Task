@@ -1,0 +1,8 @@
+input="rajesh23"
+for i in input:
+    if i in "aeiou":
+      print (i,"vowel")
+    elif i >='0' and i<='9':
+      print(i," digits")
+    else:
+        print(i,"consonant")  

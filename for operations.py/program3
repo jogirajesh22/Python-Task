@@ -1,0 +1,5 @@
+#Create a function square(n) that returns the square of a number.
+def square(n):
+    return n*n
+result=square(6)
+print(result) 

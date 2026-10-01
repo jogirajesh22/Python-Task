@@ -1,0 +1,38 @@
+"""
+3. Multiple Inheritance – Family
+ Create two classes:
+Father
+father_name
+father_job
+show_father()
+Mother
+mother_name
+mother_job
+show_mother()
+Create a Child class that inherits from both Father and Mother.
+Display the details of the father, mother, and child.
+"""
+class Father:
+    def father(self,father_name,father_job):
+        self.father_name=father_name
+        self.father_job=father_job
+    def show_father(self):
+        print("father name:",self.father_name)
+        print("father job:",self.father_job)
+class Mother:
+    def mother(self,mother_name,mother_job):
+        self.mother_name=mother_name
+        self.mother_job=mother_job
+    def show_mother(self):
+        print("mother name:",self.mother_name)
+        print("mother job:",self.mother_job)
+class Child(Father,Mother):
+    print("Father and Mother")
+c=Child()
+c.father("Rama krishna","Farmer")
+c.mother("Narayanamma","House wife")
+c.show_father()
+c.show_mother()
+
+
+                

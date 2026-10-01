@@ -1,0 +1,36 @@
+"""
+ Create:
+Employee
+name
+employee_id
+Salary
+basic_salary
+bonus
+Create Payroll that inherits from both classes and calculates:
+Total Salary = Basic Salary + Bonus
+Display employee details and total salary.
+"""
+class Employee:
+    def employee(self,name,employee_id):
+        self.name=name
+        self.employee_id=employee_id
+
+        print("name:",self.name)
+        print("emp id:",self.employee_id)
+class Salary:
+    def salary(self,basic_salary,bonus):
+        self.basic_salary=basic_salary  
+        self.bonus=bonus     
+
+        print("basic salary:",self.basic_salary)
+        print("bonus:",self.bonus)
+class Payroll(Employee,Salary):
+    def payroll(self):
+        total_salary= self.basic_salary+self.bonus
+        print(total_salary)
+
+p=Payroll()
+
+p.employee("name",218)
+p.salary(25000,5000)
+p.payroll()

@@ -1,0 +1,15 @@
+text=["Python version 3.10 detected",
+       " Loading modules",
+        "Python interpreter ready",
+         "Running task A",
+         " Task completed"]
+t=open("example.txt",'w')
+for line in text:
+     t.write(line+"\n")
+t.close()
+
+t=open("example.txt",'r')
+for line in t:
+   if "Python" in line:
+     print(line.strip())
+t.close()

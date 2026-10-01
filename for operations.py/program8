@@ -1,0 +1,12 @@
+ #Create a function get_total(m1, m2, m3) that returns the total marks.
+ #Create another function get_average(total, subjects) that returns the average.
+def get_total(m1,m2,m3):
+    c=m1+m2+m3
+    return{f"total marks :m1={m1} m2={m2} m3={m3} of {c}"}
+total=get_total(55,80,90)
+print(total)
+
+def get_average(total,subjects):
+    return total/subjects
+result=get_average(225,3)
+print(result)

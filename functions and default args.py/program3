@@ -1,0 +1,29 @@
+def student_grade(name,marks):
+    total=0
+    for mark in marks:
+        total=total+mark
+
+
+    average =total/5
+
+    if average>=90:
+        grade='A'
+    elif average>=75:
+        grade='B'
+    elif average >=60:
+        grade='C'
+    elif average >=45:
+        grade ="D"    
+    else:
+        grade='F'
+    return total,average,grade
+
+result=student_grade("rajesh",[60,40,50,60,80]) 
+print("Name;","rajesh")
+print("total:",result[0])
+print("Average:",result[1])
+print("grade:",result[2])
+
+
+
+print(result)   

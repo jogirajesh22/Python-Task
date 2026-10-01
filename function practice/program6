@@ -1,0 +1,15 @@
+"""
+6.Write a Python function called dictDecomposer that takes and prints
+two lines of text
+->One line starting the keys of the dictionary
+->One line stating the values of the dictionary
+An Example output from the correct solution is below
+The keys of the dictionary are['firstname','lastName']
+The values of the dictionary are['Putta','Vedhu']
+"""
+def dictDeomposer(student):
+   
+    print(student.keys())
+    print(student.values())
+student={"firstname":"putta","lastname":"vedhu"}    
+dictDeomposer(student)   

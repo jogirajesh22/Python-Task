@@ -1,0 +1,14 @@
+#Your program should take an even length string as input which length was greater than or equals to 6. 
+#Display the output by combining the last character from the first half and first character from the second half of the string.  
+# In case of string is not even length and the number of characters  less than 6 , you can display  output as “INVALID INPUT STRING”
+
+     #Example: #input:   MOTHER   
+                    #output:   TH
+x=input("enter a string:")
+if len(x)%2 ==0 and len(x)>=6:
+    first = x[0:len(x)//2]
+    last =x[len(x) // 2:len(x)]
+    output = first[len(first)-1]+last[0]
+    print(output)
+else:
+   print(" in valid input")

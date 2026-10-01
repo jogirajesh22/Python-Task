@@ -1,0 +1,11 @@
+X = [20, 19, 25, 17, 32, 17, 39,  17, 20]
+value =int(input("enter a value:"))
+count = 0
+for num in X:
+    if num == value:
+        count=count+1
+if count == 0:
+    print("NO ELEMENT FOUND" )
+else :
+    print(count)
+

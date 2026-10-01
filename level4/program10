@@ -1,0 +1,11 @@
+
+X = [10, 30, 78, 18, 92, 17]
+u=max(X)
+print(u)
+
+
+max=X[0]
+for i in X:
+    if i> max:
+        max=i
+print(max)        

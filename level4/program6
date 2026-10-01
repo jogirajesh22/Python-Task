@@ -1,0 +1,7 @@
+X  = ["ABC", "DEF", "MNO", "XYZ"]
+result =" "
+for i in range  (len(X)):
+    result=result+str(X[i])
+    if i !=len(X)-1:
+        result = result +"-" 
+print(result)    
