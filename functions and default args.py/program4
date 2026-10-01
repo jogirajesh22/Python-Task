@@ -1,0 +1,21 @@
+def analyze_number(n):
+    if n>0:
+        sign="positive"
+    elif n<0:
+        sign="negative"
+    elif n==0:
+        sign="zero"
+
+    if  n%2==0:
+        even_odd="even"
+    elif n%2!=0:
+        even_odd="odd"
+
+    if  n<2:
+        prime="not prime"
+    else :
+        prime="prime"
+
+    return sign,even_odd,prime
+result=analyze_number(7)
+print(result)          

@@ -1,0 +1,22 @@
+def read_file(filepath):
+    f=open(path,'r')
+    text=f.read()
+    f.close()
+    return text
+
+def get_duplicate(tx):
+    words=tx.split()
+    x=[]
+    y=[]
+    for word in words:
+        if word not in x:
+            x.append(word)
+        else:
+            y.append(word)
+    return y
+path="C:\\sample\\sample.txt"        
+data=read_file(path)
+print(data)
+
+r=get_duplicate(data)
+print(r)

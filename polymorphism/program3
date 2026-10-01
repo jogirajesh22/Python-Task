@@ -1,0 +1,50 @@
+
+"""
+Task 3: Notification System 📱
+Create a notification system for a mobile application.
+Classes:
+Notification
+EmailNotification
+SMSNotification
+WhatsAppNotification
+Create:
+send(message)
+Each class should implement send() differently.
+"""
+
+class Notification:
+    def send(self, message):
+        print("Notification:", message)
+
+
+class EmailNotification(Notification):
+    def send(self, message):
+        print("Email sent:", message)
+
+
+class SMSNotification(Notification):
+    def send(self, message):
+        print("SMS sent:", message)
+
+
+class WhatsAppNotification(Notification):
+    def send(self, message):
+        print("WhatsApp message sent:", message)
+
+
+class PushNotification:
+    def send(self, message):
+        print("Push notification:", message)
+
+
+notifications = [
+    EmailNotification(),
+    SMSNotification(),
+    WhatsAppNotification(),
+    PushNotification()
+ ]
+
+message = "Your order has been shipped."
+
+for notification in notifications:
+    notification.send(message)

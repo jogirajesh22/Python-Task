@@ -1,0 +1,14 @@
+import subprocess
+
+def run_command(cmd):
+    try:
+        resp=subprocess.check_output(cmd)
+        resp=resp.decode('UTF8')
+        return resp
+    except Exception as e:
+        print(f"unable to eun the command :{cmd}")
+        print(str(e))
+
+cmb1="tasklist"
+result=run_command(cmb1)
+print(result)

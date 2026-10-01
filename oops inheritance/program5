@@ -1,0 +1,23 @@
+"""
+ Create a class Vehicle with a method:
+def start(self):
+    print("Vehicle is starting")
+Create two child classes:
+Car
+Bike
+Override the start() method in both classes with different messages.
+Create objects and call start().
+"""
+class Vehicle:
+    def start(self):
+        print("Vehicle is staring")
+class Car(Vehicle):
+    def start(self):
+        print("car is going")
+class Bike(Car):
+    def start(self):
+        print("Bike is stopped")
+
+c=Bike() 
+c.start()       
+

@@ -1,0 +1,35 @@
+"""
+Multilevel Inheritance – Bank
+ Create:
+BankAccount → SavingsAccount → PremiumSavingsAccount
+BankAccount: account number, holder name
+SavingsAccount: balance, deposit()
+PremiumSavingsAccount: interest rate, calculate_interest()
+Create an object and perform deposit and interest calculation.
+"""
+class BankAccount:
+    def bankaccount(self,account_number,holder_name):
+       self.account_number=account_number
+       self.holder_name=holder_name
+
+       print("acoount num:",self.account_number)
+       print("holder num:",self.holder_name)
+class SavingAccount(BankAccount):
+    def savingaccount(self,balance) :
+        self.balance=balance
+    def deposit(self):
+        print("balnce:",self.balance)
+class PremiumSavingAccount(SavingAccount):
+    def premiumsavingaccount(self,interest_rate):
+        self.interest_rate=interest_rate
+    def calcualte_interest(self):
+        interest=(self.balance * self.interest_rate)/100
+        print(interest)
+
+p=PremiumSavingAccount()
+p.bankaccount(216666,"rajesh")
+p.savingaccount(30000)
+p.premiumsavingaccount(5)
+p.deposit()
+
+p.calcualte_interest()     

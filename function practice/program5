@@ -1,0 +1,13 @@
+"""
+5.Write a python function called squareMachine that takes in a list and
+returns another list whose elements are the values of the first list
+squared
+"""
+def squareMachine(numbers):
+    result=[]
+    for num in numbers:
+        result.append(num*num)
+    return result
+print(squareMachine([1,2,3,4,5]))
+
+          

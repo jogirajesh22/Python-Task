@@ -1,0 +1,22 @@
+def read_file(filepath):
+    f = open(path, 'r')
+    text = f.read()
+    f.close()
+    return text
+
+
+def unique_words(data):
+    words = data.split()
+    unique = []
+
+    for word in words:
+        if word not in unique:
+            unique.append(word)
+
+    return unique
+path="C:\\sample\\sample.txt"        
+data=read_file(path)
+print(data)
+
+r=unique_words(data)
+print(r)

@@ -1,0 +1,21 @@
+"""
+3.Write a python function called caseCounter that counts the number of
+lowercase and uppercase characters in a string.If your up to it,store
+the lower case and uppercase variables in a dictionary with in the
+function.The function should print two sentences that state the number
+of uppercase and lowercase characters
+"""
+def Casecounter(text):
+    count={"lowercase":0, "uppercase":0}
+
+    for char in text:
+        if char.islower():
+            count["lowercase"]=count["lowercase"]+1
+        elif char.isupper():
+            count["uppercase"]=count["uppercase"]+1
+
+                 
+    print("lowercase:",count["lowercase"])
+    print("uppercase:",count["uppercase"])
+
+Casecounter("hello WORld")    

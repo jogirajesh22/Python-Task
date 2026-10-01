@@ -1,0 +1,56 @@
+""""
+Create an Online Shopping Order System using OOP.
+Requirements
+Create a parent class Product with:
+name
+price
+display_product() method
+Create two child classes:
+Electronics
+Clothing
+Both child classes should have their own calculate_discount() method with different discount logic.
+Create objects for both products.
+Display:
+Product name
+Original price
+Discount
+Final price
+Use polymorphism by calling calculate_discount() using the child objects.
+"""
+class Product:
+    def product(self,name,price):
+        self.name=name
+        self.price=price
+    def display_product(self):
+        print("name:",self.name)
+        print("price:",self.price)
+
+class Electronics(Product):
+    def calculate_discount(self,discount):
+        discount = self.price * discount / 100
+        final_price = self.price - discount
+
+        print("Discount:", discount)
+        print("Final Price:", final_price)
+
+
+class Clothing(Product):
+    def calculate_discount(self,discount):
+        discount = self.price * discount / 100
+        final_price = self.price - discount
+
+        print("Discount:", discount)
+        print("Final Price:", final_price)
+
+s=Electronics()
+s.product("laptop",50000)
+e=Clothing()
+e.product("T-shirt",500)
+
+
+products=[s,e]
+
+for r in products:
+    r.calculate_discount(10)
+    r.display_product()
+    print()

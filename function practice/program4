@@ -1,0 +1,7 @@
+"""
+4.Write a python function called duplicateEliminator that takes in a
+list,eliminates any duplicate values and returns a set.
+"""
+def duplicateEliminator(numbers):
+    return set(numbers)
+print(duplicateEliminator([2,2,3,4,5,4,5,8,5]))

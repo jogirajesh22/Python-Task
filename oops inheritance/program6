@@ -1,0 +1,45 @@
+""" 
+Create a Student class with:
+name
+marks1
+marks2
+marks3
+Create a child class Result that calculates:
+Total marks
+Average
+Grade
+Display the complete result.
+"""
+class Student:
+    def student(self,name,marks1,marks2,marks3):
+        self.name=name
+        self.marks1=marks1
+        self.marks2=marks2
+        self.marks3=marks3
+       
+class Result(Student):
+    def calculate(self):
+    
+        self.total=self.marks1+self.marks2+self.marks3
+        self.Average=self.total/3
+        if self.Average>=65:
+            self.garde='A'
+        elif self.Average>=40:
+            self.grade='B'
+        elif self.Average>=30:
+            self.Average='C'
+        else:
+            self.garde='F'
+    def display(self):
+
+     print("name:",self.name)    
+     print("marks1:",self.marks1)   
+     print("marks2:",self.marks2)   
+     print("marks3:",self.marks3)
+     print("total:",self.total)
+     print("Average:",self.Average)
+     print("grade:",self.grade)
+c=Result()   
+c.student("Rajesh",50,40,30)
+c.calculate()
+c.display()

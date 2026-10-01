@@ -1,0 +1,14 @@
+def analyze_list(numbers):
+   largest=max(numbers)
+   smallest=min(numbers)
+   total=sum(numbers)
+   average=total/len(numbers)
+
+   return largest,smallest,total,average
+result=analyze_list([10,20,30,40,50])
+
+print(result)
+ 
+
+    
+
